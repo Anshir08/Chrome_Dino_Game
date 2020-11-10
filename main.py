@@ -8,16 +8,16 @@ def hit(key):
 
 def isCollide(data):
     for i in range(200, 400):
-        for j in range(390, 440):
+        for j in range(380, 440):
             if data[i, j] < 100:
                 hit("up")
                 return
 
-    # for i in range(250, 280):
-    #     for j in range(310, 375):
-    #         if data[i, j] < 100:
-    #             hit("down")
-    #             return
+    for i in range(200, 230):
+        for j in range(310, 375):
+            if data[i, j] < 100:
+                hit("down")
+                return
 
     return
 
