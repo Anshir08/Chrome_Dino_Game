@@ -7,19 +7,20 @@ def hit(key):
     return
 
 def isCollide(data):
-    for i in range(200, 400):
-        for j in range(380, 440):
+  if data[1005,210] < 128:
+    for i in range(240, 440):
+        for j in range(400, 420):
             if data[i, j] < 100:
                 hit("up")
                 return
-
-    for i in range(200, 230):
-        for j in range(310, 375):
-            if data[i, j] < 100:
-                hit("down")
+  else:
+    for i in range(240, 440):
+        for j in range(400, 420):
+            if data[i, j] > 100:
+                hit("up")
                 return
 
-    return
+  return
 
 if __name__ == "__main__":
     print("Hey!!! Dino game about to start in 3 seconds")
