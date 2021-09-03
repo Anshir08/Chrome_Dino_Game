@@ -11,7 +11,7 @@ def isCollide(data):
     for i in range(240, 440):
         for j in range(400, 420):
             if data[i, j] < 100:
-                hit("up")
+                hit("down")
                 return
   else:
     for i in range(240, 440):
